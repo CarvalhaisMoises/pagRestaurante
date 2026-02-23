@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhonho's restaurante</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Nhonho's restaurante</h1>
+        <p>No Nhonho's Restaurante, cada prato é preparado com carinho, sabor e aquele toque especial que transforma uma
+            simples refeição em um momento inesquecível. Aqui você encontra tradição, qualidade e um ambiente acolhedor
+            para aproveitar com a família e amigos.</p>
+        <div style="flex-direction: row;" class="carrosel">
+            <img src="https://th.bing.com/th/id/OIP.OQWwPxt_w4k1fSoa9xNcrQHaE8?w=280&h=187&c=7&r=0&o=7&pid=1.7&rm=3"
+                alt="">
+            <img src="https://th.bing.com/th/id/OIP.OQWwPxt_w4k1fSoa9xNcrQHaE8?w=280&h=187&c=7&r=0&o=7&pid=1.7&rm=3"
+                alt="">
+            <img src="https://th.bing.com/th/id/OIP.OQWwPxt_w4k1fSoa9xNcrQHaE8?w=280&h=187&c=7&r=0&o=7&pid=1.7&rm=3"
+                alt="">
+            <img src="https://th.bing.com/th/id/OIP.OQWwPxt_w4k1fSoa9xNcrQHaE8?w=280&h=187&c=7&r=0&o=7&pid=1.7&rm=3"
+                alt="">
+        </div>
+        <nav>
+            <a href="#principal">Pratos Principais</a>
+            <a href="#doDia">Pratos do dia</a>
+            <a href="#cafeDaManha">Café da manhã</a>
+            <a href="#sobremesa">Sabremesas</a>
+            <a href="agendamento.html">Reservar </a>
+        </nav>
+    </header>
+    <main>
+        <section id="principal">
+            <article>
+                <h2>Pratos pricipais</h2>
+                <table class="pratosPricipais" border="1px">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Qnt</th>
+                        <th>Preço</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td onclick="abrirModal('Rocambole', 
+'Delicioso rocambole caseiro, macio e recheado com creme especial da casa.',
+'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d')">
+                                Rocambole
+                            </td>
+                            <td>prato </td>
+                            <td>R$15,50</td>
+                        </tr>
+                        <tr>
+                            <td>petit gâteau</td>
+                            <td>prato</td>
+                            <td>R$29,90</td>
+                        </tr>
+                        <tr>
+                            <td>prato 3</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+                        <tr>
+                            <td>prato 4</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+        <section id="doDia">
+            <article>
+                <h2>Pratos do dia</h2>
+                <table class="pratosDoDia" border="1px">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Qnt</th>
+                        <th>Preço</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>rocambole</td>
+                            <td>prato </td>
+                            <td>R$15,50</td>
+                        </tr>
+                        <tr>
+                            <td>petit gâteau</td>
+                            <td>prato</td>
+                            <td>R$29,90</td>
+                        </tr>
+                        <tr>
+                            <td>prato 3</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+                        <tr>
+                            <td>prato 4</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+        <section id="cafeDaManha">
+            <article>
+                <h2>Cafe da manhã</h2>
+                <table class="pratosPricipais" border="1px">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Qnt</th>
+                        <th>Preço</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>rocambole</td>
+                            <td>prato </td>
+                            <td>R$15,50</td>
+                        </tr>
+                        <tr>
+                            <td>petit gâteau</td>
+                            <td>prato</td>
+                            <td>R$29,90</td>
+                        </tr>
+                        <tr>
+                            <td>prato 3</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+                        <tr>
+                            <td>prato 4</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+
+        <section id="sobremesa">
+            <article>
+                <h2>Sobremessas</h2>
+                <table class="sobremesa" border="1px">
+                    <thead>
+                        <th>Nome</th>
+                        <th>Qnt</th>
+                        <th>Preço</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>rocambole</td>
+                            <td>prato </td>
+                            <td>R$15,50</td>
+                        </tr>
+                        <tr>
+                            <td>petit gâteau</td>
+                            <td>prato</td>
+                            <td>R$29,90</td>
+                        </tr>
+                        <tr>
+                            <td>prato 3</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+                        <tr>
+                            <td>prato 4</td>
+                            <td>####</td>
+                            <td>R$##,##</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+
+    </main>
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <img id="modalImg" src="" alt="">
+            <h3 id="modalTitulo"></h3>
+            <p id="modalDescricao"></p>
+        </div>
+    </div>
+
+    <script>
+function abrirModal(titulo, descricao, imagem) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modalTitulo").innerText = titulo;
+    document.getElementById("modalDescricao").innerText = descricao;
+    document.getElementById("modalImg").src = imagem;
+}
+
+function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+/* FECHAR CLICANDO FORA */
+window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    const conteudo = document.querySelector(".modal-content");
+
+    if (event.target === modal) {
+        fecharModal();
+    }
+}
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        fecharModal();
+    }
+});
+</script>
+</body>
+
+</html>
