@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <form class="cadastro" submit="alert ('Dados salvos com sucesso')">
+        <h2>Agendamento Nhonho's Restaurante</h2>
+
+        <label>Nome Completo:</label> <br>
+        <input type="text" class="campo" maxlength="30"> <br><br>
+
+        <label>Número de Contato:</label><br>
+        <input type="text" class="campo" maxlength="9" pattern="\d{1,9}">  <br><br>
+
+        <label>CPF:</label><br>
+        <input type="text" class="campo" maxlength="11" pattern="\d{1,11}"> <br><br>
+
+        <label>Idade</label><br>
+        <input type="text" class="campo" maxlength="2" pattern="\d{1,99}"> <br> <br>
+
+        <label>Agendamento</label><br>
+        <input type="date" class="campo"> <br><br>
+
+        <label>Quantidade de Pessoas:</label>
+        <select> <br><br>
+            <option type="checkbox" name="quantidade">Selecione</option>
+            <option type="checkbox" name="quantidade">1 Pessoa</option>
+            <option type="checkbox" name="quantidade">2 Pessoas</option>
+            <option type="checkbox" name="quantidade">3 ou mais Pessoas</option>
+        </select> <br>
+
+       <br> Horario: 
+        <select> <br><br>
+            <option type="checkbox" name="horario">Selecione
+            <option type="checkbox" name="horario">Manhã
+            <option type="checkbox" name="horario">Tarde
+            <option type="checkbox" name="horario">Noite 
+        </select> <br><br>
+
+        <button type="submit">Concluir Agendamento</button> <br><br><br>
+
+        <img src="nhonho2.jpg" width="200px"> 
+
+
+</body>
+</html>
