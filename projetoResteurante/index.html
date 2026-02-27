@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhonho's restaurante</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
     <header>
         <h1>Nhonho's restaurante</h1>
         <p>No Nhonho's Restaurante, cada prato é preparado com carinho, sabor e aquele toque especial que transforma uma
             simples refeição em um momento inesquecível. Aqui você encontra tradição, qualidade e um ambiente acolhedor
             para aproveitar com a família e amigos.</p>
-        <div style="flex-direction: row;" class="carrosel">
-            <img src="https://th.bing.com/th/id/OIP.E082zXHbdTt6mlkRQw0bIQHaE8?w=271&h=181&c=7&r=0&o=7&pid=1.7&rm=3"
-                alt="">
-            <img src="https://th.bing.com/th/id/OIP.fLppPAmGnMgD4NKNwjPMJAHaE5?w=283&h=187&c=7&r=0&o=7&pid=1.7&rm=3"
-                alt="">
-            <img src="https://th.bing.com/th/id/OIP.3AdfGYzsZPaOn3BMKSn4ugHaHa?w=179&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
-                alt="">
-            <img src="https://th.bing.com/th/id/OIP.0T473rBRWFmNmVSODD3fEgHaE8?w=200&h=200&c=10&o=6&pid=genserp&rm=2"
-                alt="">
+
+        <!-- Carrossel -->
+        <div class="carrossel-container">
+            <button class="prev" onclick="anterior()">&#10094;</button>
+            <div class="carrossel-wrapper">
+                <div class="carrossel-track">
+                    <img src="https://th.bing.com/th/id/OIP.E082zXHbdTt6mlkRQw0bIQHaE8" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.fLppPAmGnMgD4NKNwjPMJAHaE5" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.3AdfGYzsZPaOn3BMKSn4ugHaHa" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.0T473rBRWFmNmVSODD3fEgHaE8" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.klxJBnc9aKmMT63LD_9J6AHaJQ?w=200&h=200&c=10&o=6&pid=genserp&rm=2" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.nGO_1oS9zOXxSYzh1H_TEwHaEK?w=200&h=200&c=10&o=6&pid=genserp&rm=2" alt="">
+                </div>
+            </div>
+            <button class="next" onclick="proximo()">&#10095;</button>
         </div>
+
         <nav>
             <a href="#principal">Pratos Principais</a>
             <a href="#doDia">Pratos do dia</a>
             <a href="#cafeDaManha">Café da manhã</a>
-            <a href="#sobremesa">Sabremesas</a>
-            <a href="agendamento.html">Reservar </a>
+            <a href="#sobremesa">Sobremesas</a>
+            <a href="agendamento.html">Reservar</a>
         </nav>
     </header>
+  
+
+
+
     <main>
         <section id="principal">
             <article>
@@ -266,6 +274,7 @@
         </section>
 
     </main>
+    
     <!-- MODAL -->
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -276,33 +285,6 @@
         </div>
     </div>
 
-    <script>
-        function abrirModal(titulo, descricao, imagem) {
-            document.getElementById("modal").style.display = "flex";
-            document.getElementById("modalTitulo").innerText = titulo;
-            document.getElementById("modalDescricao").innerText = descricao;
-            document.getElementById("modalImg").src = imagem;
-        }
-
-        function fecharModal() {
-            document.getElementById("modal").style.display = "none";
-        }
-
-        /* FECHAR CLICANDO FORA */
-        window.onclick = function (event) {
-            const modal = document.getElementById("modal");
-            const conteudo = document.querySelector(".modal-content");
-
-            if (event.target === modal) {
-                fecharModal();
-            }
-        }
-        document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape") {
-                fecharModal();
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
